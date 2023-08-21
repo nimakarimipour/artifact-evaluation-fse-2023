@@ -1,6 +1,6 @@
 # Artifact for "Practical Inference of Nullability Types" (FSE 2023)
 
-This README.md file provides information about the artifact for "Practical Inference of Nullability Types." The artifact includes the implementation of our tool in Java, used benchmarks in the paper and the scripts to collect data used in tables.
+This README.md file provides information about the artifact for "Practical Inference of Nullability Types." The artifact includes the implementation of our tool in Java, used benchmarks in the paper and the scripts to collect data used in tables. Please note that proprietary code are not reproducible with this artifact.
 
 To access the artifact, you can find it on Zenodo. To get started, please follow the instructions below: 
 
@@ -37,7 +37,7 @@ To generate a row of a table, please pass the benchmark name to the script as wr
 
 
 ## Cached results
-Every script found in the `AE` directory gathers the necessary data by processing the tool's final output for each benchmark. To circumvent the time-intensive nature of tool execution, results from each benchmark's tool output are cached. Nevertheless, if a complete experiment is preferred, append `--fresh` to each script. This will prompt the scripts to execute the tool on every benchmark and subsequently compile the data from the execution output.
+Every script found in the `AE` directory gathers the necessary data by processing the tool's final output for each benchmark. To circumvent the time-intensive nature of tool execution, results from each benchmark's tool output are cached. Nevertheless, if a complete experiment is preferred, append `--fresh` to each script. This will prompt the scripts to execute the tool on every benchmark and subsequently compile the data from the execution output. Please note that cached results are stored in branches with `saved` identifier and the output of running the tool will be stored on the branches with `fresh` identifier.
 
 
 ## Reproducing Table 1
